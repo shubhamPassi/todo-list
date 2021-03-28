@@ -1,16 +1,18 @@
 # todo-list
 
-## Table of Contents
+## [Table of Contents]
 
--   [Features and Sketches](#eatures-and-sketches)
+-   [Todo List](#todo-list)
 
--   [HTML Page](#html-page)
+    -   [Features and Sketches](#eatures-and-sketches)
 
--   [Styling with CSS](#styling-with-css)
+    -   [HTML Page](#html-page)
 
--   [Interactivity with JavaScript](#interactivity-with-javascript)
+    -   [Styling with CSS](#styling-with-css)
 
--   [Summary](#summary)
+    -   [Interactivity with JavaScript](#interactivity-with-javascript)
+
+    -   [Summary](#summary)
 
 ### **Features and sketches**
 
@@ -29,7 +31,9 @@ Before we dive in the coding process, let’s quickly sketch the outline of what
 
 We first quickly create a HTML page which resembles to what we sketched, then we can add some styling to make the app a little more attractive, you can come up with your own CSS to make it nicer if you want. Finally, we slowly add some JavaScript code which orchestrate those features we have listed.
 
-### **HTML PAGE**
+**[⬆ back to top](#table-of-contents)**
+
+### **HTML Page**
 
 Initially, we create an HTML page for what we intend to do, which is a to-do list. This HTML page should have some text displaying information about each section, i.g Add section, To-do section, and Completed section. Also, we need to add some buttons for editing, deleting and clearing the content.
 
@@ -81,7 +85,9 @@ Initially, we create an HTML page for what we intend to do, which is a to-do lis
 
 This is done for our HTML file. You should familiar with HTML code above and easily understand what it’s about. We have created a div container to hold all of our main elements, inside this div we have 4 sub divs for each section of the page. We need to retrieve the HTML element in our JavaScript file, hence the ids we define here make this process easier. We also have linked to a CSS file and a JavaScript named style.css and script.js respectively.
 
-### **STYLING WITH CSS**
+**[⬆ back to top](#table-of-contents)**
+
+### **Styling With Css**
 
 Before jump into JavaScript, to make the app is little more attractive, we need to decorate our page by using CSS. You can custom the CSS page if you want:
 
@@ -254,7 +260,9 @@ We’ll get this result of we run this code:
 
 ![](html-with-css.png)
 
-### **INTERACTIVITY WITH JAVASCRIPT**
+**[⬆ back to top](#table-of-contents)**
+
+### **Interactivity With JavaScript**
 
 **Inatial Selected Elements**
 
@@ -299,7 +307,7 @@ addButton.addEventListener("click", addTask);
 
 Every time the **addButton** is clicked, the **addTask** function will be called, notice that we don’t have to use () to call a function inside the **addEventListener** method.
 
-**CREATENEWTASK FUNCTION**
+**Create New Task FUNCTION**
 
 ```javascript
 let createNewTask = function (taskName) {
@@ -342,7 +350,7 @@ If we pass in a value such as “Learn JavaScript” to the **createNewTask** fu
 
 You can easily inspect your page if you want by using CMD+SHIFT+J (in macOS) or Ctrl+Shift+J(in Windows). There is a tab named “Elements” where elements of the page stored there.
 
-**BINDTASKEVENTS FUNCTION**
+**Bind Task Events Function**
 
 The function **bindTaskEvents** is responsible for firing some events such as edit and delete. It also helps us to move an item from the incomplete section to the finished one:
 
@@ -438,7 +446,7 @@ The **classList** property returns all the classes of an element and its method 
 
 ![](giphy.gif)
 
-**DELETE TASKS**
+**Delete Tasks**
 
 Next, we need to find a way to delete a task, we already see the deleteTask function is called in the bindTaskEvents function:
 
@@ -452,7 +460,7 @@ let deleteTask = function () {
 
 This function has a variable named **listItem** which stores exactly the same thing as we did in the **editTask** function, **this.parentNode** here also returns a **li** element and we access to the parent **ul** of this element then store it to the **ul** variable. Finally, we eliminate this li element on its parent **ul** by using the **removeChild** method.
 
-**MARK A TASK AS COMPLETED**
+**Mark a Task Completed**
 
 We are closer to the end, the taskCompleted helps us move a task from the to-do section to the completed tasks section.
 
@@ -468,7 +476,7 @@ let taskCompleted = function () {
 
 On line 6th, the **bindTaskEvents** will move the listItem from the completed section to the incomplete section of checkbox is unchecked (we already explain the bindTaskEvents function).
 
-**MARK A TASK AS INCOMPLETE**
+**Mark a Task Incompleted**
 
 The **taskIncomplete** function looks identical to the **taskComplete** function, except we call the **bindTaskEvents** with **taskCompleted** as the second argument:
 
@@ -485,7 +493,7 @@ For better envision, let’s quickly take a look at how **taskComplete** and **t
 
 ![](incomplete-task.gif)
 
-**CLEAR ALL THE TASKS**
+**Clear All The Tasks**
 
 This is the last function of our to-do list app, when a clear button is activated, it will annihilate all the tasks both in the incomplete and completed sections.
 
@@ -592,6 +600,10 @@ Finally, our achievement might look like this:
 
 ![](final.png)
 
-### **summary**
+**[⬆ back to top](#table-of-contents)**
+
+### **Summary**
 
 we have learned how to create a simple to-do list app with plain JavaScript. First off, it’s judicious to not go directly to the coding process, but rather sketch a demo quickly first to get a general outline of what we should do. We have listed several features to our app and we implemented all of them in JavaScript. If a function is too long to write and some of its components are possible to be written as a separate function, then we might have to find a way to proceed. We learned how to use JavaScript to interact with Document Object Model (DOM) to make our app interactable, how to activate an event using addEventListiner method.
+
+**[⬆ back to top](#table-of-contents)**
