@@ -4,13 +4,13 @@
 
 -   [Features and Sketches](#eatures-and-sketches)
 
-    -   [HTML Page](#html-page)
+-   [HTML Page](#html-page)
 
-    -   [Styling with CSS](#styling-with-css)
+-   [Styling with CSS](#styling-with-css)
 
-    -   [Interactivity with JavaScript](#interactivity-with-javascript)
+-   [Interactivity with JavaScript](#interactivity-with-javascript)
 
-    -   [Summary](#summary)
+-   [Summary](#summary)
 
 ### **Features and sketches**
 
