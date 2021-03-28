@@ -2,9 +2,7 @@
 
 ## Table of Contents
 
--   [todo list](#todo-list)
-
-    -   [Features and Sketches](#eatures-and-sketches)
+-   [Features and Sketches](#eatures-and-sketches)
 
     -   [HTML Page](#html-page)
 
